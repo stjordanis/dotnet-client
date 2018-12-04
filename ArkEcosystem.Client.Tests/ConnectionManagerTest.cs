@@ -96,7 +96,7 @@ namespace ArkEcosystem.Client.Tests
         {
             var manager = new ConnectionManager();
             var conn1 = TestHelper.MockConnection<ArkEcosystem.Client.API.One.One>();
-            var conn2 = TestHelper.MockConnection<ArkEcosystem.Client.API.Two.Two>();
+            var conn2 = TestHelper.MockConnection<ArkEcosystem.Client.API.Two>();
             var conn3 = TestHelper.MockConnection<ArkEcosystem.Client.API.One.One>();
 
             manager.Connect(conn1, "test1");

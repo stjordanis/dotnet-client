@@ -22,7 +22,7 @@ namespace ArkEcosystem.Client
             Api = CreateApi(client);
 
             Client = client;
-            Client.DefaultRequestHeaders.TryAddWithoutValidation("API-Version", Api.Version());
+            Client.DefaultRequestHeaders.TryAddWithoutValidation("API-Version", 2);
             Client.DefaultRequestHeaders.TryAddWithoutValidation("Content-Type", "application/json");
         }
 
